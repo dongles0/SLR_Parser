@@ -1,0 +1,8 @@
+﻿  SLR_parser_2015253028.c
+C:\Users\poweruser\source\repos\SLR_Parser_이동은\SLR_parser_2015253028.c(776,84): warning C4013: 'itemListCounter'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\poweruser\source\repos\SLR_Parser_이동은\SLR_parser_2015253028.c(819,38): warning C4013: 'is_same_two_itemlists'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\poweruser\source\repos\SLR_Parser_이동은\SLR_parser_2015253028.c(1371,9): warning C4101: 'j' :참조되지 않은 지역 변수입니다.
+C:\Users\poweruser\source\repos\SLR_Parser_이동은\SLR_parser_2015253028.c(1565,41): warning C4028: 정식 매개 변수 1이(가) 선언과 다릅니다.
+C:\Users\poweruser\source\repos\SLR_Parser_이동은\SLR_parser_2015253028.c(1659,13): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\poweruser\source\repos\SLR_Parser_이동은\SLR_parser_2015253028.c(1693,10): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
+  SLR_Parser_이동은.vcxproj -> C:\Users\poweruser\source\repos\SLR_Parser_이동은\Debug\SLR_Parser_이동은.exe

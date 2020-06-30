@@ -1,0 +1,196 @@
+ID[ 0] (  7) : L' -> . L      L -> . S      L -> . L ; S      S -> . { L }      S -> . id = E      S -> . if ( BE ) then S else S      S -> . while ( BE ) do S      
+ID[ 1] (  1) : S -> id . = E      
+ID[ 2] (  7) : S -> { . L }      L -> . S      L -> . L ; S      S -> . { L }      S -> . id = E      S -> . if ( BE ) then S else S      S -> . while ( BE ) do S      
+ID[ 3] (  1) : S -> if . ( BE ) then S else S      
+ID[ 4] (  1) : S -> while . ( BE ) do S      
+ID[ 5] (  2) : L' -> L .     L -> L . ; S      
+ID[ 6] (  1) : L -> S .     
+ID[ 7] ( 10) : S -> id = . E      E -> . T      E -> . E + T      E -> . E - T      T -> . F      T -> . T * F      T -> . T / F      F -> . id      F -> . num      F -> . ( E )      
+ID[ 8] (  2) : S -> { L . }      L -> L . ; S      
+ID[ 9] ( 10) : S -> if ( . BE ) then S else S      BE -> . BT      BE -> . BE || BT      BT -> . BF      BT -> . BT && BF      BF -> . true      BF -> . false      BF -> . id rop id      BF -> . ( BE )      BF -> . ! BF      
+ID[10] ( 10) : S -> while ( . BE ) do S      BE -> . BT      BE -> . BE || BT      BT -> . BF      BT -> . BT && BF      BF -> . true      BF -> . false      BF -> . id rop id      BF -> . ( BE )      BF -> . ! BF      
+ID[11] (  5) : L -> L ; . S      S -> . { L }      S -> . id = E      S -> . if ( BE ) then S else S      S -> . while ( BE ) do S      
+ID[12] (  1) : F -> id .     
+ID[13] (  1) : F -> num .     
+ID[14] ( 10) : F -> ( . E )      E -> . T      E -> . E + T      E -> . E - T      T -> . F      T -> . T * F      T -> . T / F      F -> . id      F -> . num      F -> . ( E )      
+ID[15] (  3) : S -> id = E .     E -> E . + T      E -> E . - T      
+ID[16] (  3) : E -> T .     T -> T . * F      T -> T . / F      
+ID[17] (  1) : T -> F .     
+ID[18] (  1) : S -> { L } .     
+ID[19] (  1) : BF -> id . rop id      
+ID[20] (  6) : BF -> ! . BF      BF -> . true      BF -> . false      BF -> . id rop id      BF -> . ( BE )      BF -> . ! BF      
+ID[21] ( 10) : BF -> ( . BE )      BE -> . BT      BE -> . BE || BT      BT -> . BF      BT -> . BT && BF      BF -> . true      BF -> . false      BF -> . id rop id      BF -> . ( BE )      BF -> . ! BF      
+ID[22] (  1) : BF -> true .     
+ID[23] (  1) : BF -> false .     
+ID[24] (  2) : S -> if ( BE . ) then S else S      BE -> BE . || BT      
+ID[25] (  2) : BE -> BT .     BT -> BT . && BF      
+ID[26] (  1) : BT -> BF .     
+ID[27] (  2) : S -> while ( BE . ) do S      BE -> BE . || BT      
+ID[28] (  1) : L -> L ; S .     
+ID[29] (  3) : F -> ( E . )      E -> E . + T      E -> E . - T      
+ID[30] (  7) : E -> E + . T      T -> . F      T -> . T * F      T -> . T / F      F -> . id      F -> . num      F -> . ( E )      
+ID[31] (  7) : E -> E - . T      T -> . F      T -> . T * F      T -> . T / F      F -> . id      F -> . num      F -> . ( E )      
+ID[32] (  4) : T -> T * . F      F -> . id      F -> . num      F -> . ( E )      
+ID[33] (  4) : T -> T / . F      F -> . id      F -> . num      F -> . ( E )      
+ID[34] (  1) : BF -> id rop . id      
+ID[35] (  1) : BF -> ! BF .     
+ID[36] (  2) : BF -> ( BE . )      BE -> BE . || BT      
+ID[37] (  1) : S -> if ( BE ) . then S else S      
+ID[38] (  8) : BE -> BE || . BT      BT -> . BF      BT -> . BT && BF      BF -> . true      BF -> . false      BF -> . id rop id      BF -> . ( BE )      BF -> . ! BF      
+ID[39] (  6) : BT -> BT && . BF      BF -> . true      BF -> . false      BF -> . id rop id      BF -> . ( BE )      BF -> . ! BF      
+ID[40] (  1) : S -> while ( BE ) . do S      
+ID[41] (  1) : F -> ( E ) .     
+ID[42] (  3) : E -> E + T .     T -> T . * F      T -> T . / F      
+ID[43] (  3) : E -> E - T .     T -> T . * F      T -> T . / F      
+ID[44] (  1) : T -> T * F .     
+ID[45] (  1) : T -> T / F .     
+ID[46] (  1) : BF -> id rop id .     
+ID[47] (  1) : BF -> ( BE ) .     
+ID[48] (  5) : S -> if ( BE ) then . S else S      S -> . { L }      S -> . id = E      S -> . if ( BE ) then S else S      S -> . while ( BE ) do S      
+ID[49] (  2) : BE -> BE || BT .     BT -> BT . && BF      
+ID[50] (  1) : BT -> BT && BF .     
+ID[51] (  5) : S -> while ( BE ) do . S      S -> . { L }      S -> . id = E      S -> . if ( BE ) then S else S      S -> . while ( BE ) do S      
+ID[52] (  1) : S -> if ( BE ) then S . else S      
+ID[53] (  1) : S -> while ( BE ) do S .     
+ID[54] (  5) : S -> if ( BE ) then S else . S      S -> . { L }      S -> . id = E      S -> . if ( BE ) then S else S      S -> . while ( BE ) do S      
+ID[55] (  1) : S -> if ( BE ) then S else S .     
+Total number of states = 56
+
+Goto arcs:
+From  To  Symbol
+   0    1  id 
+   0    2  { 
+   0    3  if 
+   0    4  while 
+   0    5  L 
+   0    6  S 
+   1    7  = 
+   2    1  id 
+   2    2  { 
+   2    3  if 
+   2    4  while 
+   2    8  L 
+   2    6  S 
+   3    9  ( 
+   4   10  ( 
+   5   11  ; 
+   7   12  id 
+   7   13  num 
+   7   14  ( 
+   7   15  E 
+   7   16  T 
+   7   17  F 
+   8   18  } 
+   8   11  ; 
+   9   19  id 
+   9   20  ! 
+   9   21  ( 
+   9   22  true 
+   9   23  false 
+   9   24  BE 
+   9   25  BT 
+   9   26  BF 
+  10   19  id 
+  10   20  ! 
+  10   21  ( 
+  10   22  true 
+  10   23  false 
+  10   27  BE 
+  10   25  BT 
+  10   26  BF 
+  11    1  id 
+  11    2  { 
+  11    3  if 
+  11    4  while 
+  11   28  S 
+  14   12  id 
+  14   13  num 
+  14   14  ( 
+  14   29  E 
+  14   16  T 
+  14   17  F 
+  15   30  + 
+  15   31  - 
+  16   32  * 
+  16   33  / 
+  19   34  rop 
+  20   19  id 
+  20   20  ! 
+  20   21  ( 
+  20   22  true 
+  20   23  false 
+  20   35  BF 
+  21   19  id 
+  21   20  ! 
+  21   21  ( 
+  21   22  true 
+  21   23  false 
+  21   36  BE 
+  21   25  BT 
+  21   26  BF 
+  24   37  ) 
+  24   38  || 
+  25   39  && 
+  27   40  ) 
+  27   38  || 
+  29   30  + 
+  29   31  - 
+  29   41  ) 
+  30   12  id 
+  30   13  num 
+  30   14  ( 
+  30   42  T 
+  30   17  F 
+  31   12  id 
+  31   13  num 
+  31   14  ( 
+  31   43  T 
+  31   17  F 
+  32   12  id 
+  32   13  num 
+  32   14  ( 
+  32   44  F 
+  33   12  id 
+  33   13  num 
+  33   14  ( 
+  33   45  F 
+  34   46  id 
+  36   47  ) 
+  36   38  || 
+  37   48  then 
+  38   19  id 
+  38   20  ! 
+  38   21  ( 
+  38   22  true 
+  38   23  false 
+  38   49  BT 
+  38   26  BF 
+  39   19  id 
+  39   20  ! 
+  39   21  ( 
+  39   22  true 
+  39   23  false 
+  39   50  BF 
+  40   51  do 
+  42   32  * 
+  42   33  / 
+  43   32  * 
+  43   33  / 
+  48    1  id 
+  48    2  { 
+  48    3  if 
+  48    4  while 
+  48   52  S 
+  49   39  && 
+  51    1  id 
+  51    2  { 
+  51    3  if 
+  51    4  while 
+  51   53  S 
+  52   54  else 
+  54    1  id 
+  54    2  { 
+  54    3  if 
+  54    4  while 
+  54   55  S 
+Total number of arcs = 135

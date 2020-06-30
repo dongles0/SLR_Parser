@@ -1,0 +1,5 @@
+prog_start:
+t_001  = 30.34
+t_000  = y + t_001 
+sum = t_000 
+prog_end:
